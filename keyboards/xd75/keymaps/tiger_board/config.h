@@ -17,3 +17,25 @@
 #pragma once
 
 // place overrides here
+
+#undef DESCRIPTION
+#define DESCRIPTION     XD75Am 15x5 ortholinear keyboard
+
+#undef BACKLIGHT_ON_STATE
+#define BACKLIGHT_ON_STATE 1
+#undef BACKLIGHT_LEVELS
+#define BACKLIGHT_LEVELS 15
+
+#define BACKLIGHT_BREATHING
+#define BREATHING_PERIOD 6
+
+#define RGBLIGHT_SPLIT
+#undef RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_SNAKE
+#undef RGBLIGHT_HUE_STEP
+#define RGBLIGHT_HUE_STEP 15 // units to step when in/decreasing hue
+#undef RGBLIGHT_SAT_STEP
+#define RGBLIGHT_SAT_STEP 15 // units to step when in/decresing saturation
+#undef RGBLIGHT_VAL_STEP
+#define RGBLIGHT_VAL_STEP 15 // units to step when in/decreasing value (brightness)
