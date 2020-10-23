@@ -130,20 +130,20 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     case _QWERTY:
         backlight_level(12);
         //breathing_enable();
-        rgblight_sethsv_noeeprom(HSV_CORAL);
+        rgblight_sethsv_noeeprom(HSV_RED);
         rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING);
         break;
     case _FUNCTION:
         backlight_level(10);
         //breathing_disable();
-        rgblight_sethsv_noeeprom(HSV_CORAL);
+        rgblight_sethsv_noeeprom(HSV_ORANGE);
         rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
         break;
     case _GAMING:
         backlight_level(14);
         //breathing_enable();
         rgblight_sethsv_noeeprom(HSV_RED);
-        rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING+2);
+        rgblight_mode_noeeprom(RGBLIGHT_MODE_SNAKE+2);
         break;
     default: 
         backlight_level(10);
@@ -171,6 +171,6 @@ void keyboard_pre_init_user(void) {
   backlight_enable();
   backlight_level(12);
   breathing_disable();
-  rgblight_sethsv_noeeprom(HSV_CORAL);
+  rgblight_sethsv_noeeprom(HSV_RED);
   rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING);
 }
